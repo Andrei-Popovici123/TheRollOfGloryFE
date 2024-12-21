@@ -1,0 +1,27 @@
+<app-header></app-header>
+<div class="home-container">
+  <!-- About Section -->
+  <section class="about-section text-center py-4">
+    <h1 class="text-uppercase">Welcome to The Roll of Glory</h1>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget tincidunt elit. Nulla vehicula, magna ut scelerisque fringilla, purus enim pellentesque nisi, nec efficitur purus nunc nec urna. Pellentesque malesuada id eros non condimentum. Duis tristique, sapien ut lacinia tincidunt, tortor ligula egestas sem, non dictum arcu justo non velit. Mauris ultricies mollis ligula non gravida. Fusce sit amet mi odio. Donec vitae nibh sit amet lorem tincidunt tristique a id metus. Donec pulvinar nulla at lacus pharetra, vel dignissim nisi tristique. Quisque sit amet dictum elit, quis porttitor ex. Sed at orci in dolor fringilla sollicitudin eget nec lorem. Curabitur in feugiat nunc, sit amet bibendum arcu. Nam vitae fringilla ligula. Fusce venenatis luctus ex vel euismod.
+
+      Ut tempus quam nec turpis tempor, id malesuada odio porttitor. Etiam venenatis nisi sed rhoncus tempor. Ut congue, metus eget convallis luctus, odio enim tincidunt dolor, a feugiat arcu purus et tortor. Pellentesque euismod sapien et venenatis fringilla. Nulla ut ex nisi. Vivamus tincidunt sapien id felis feugiat iaculis. Integer vehicula condimentum vestibulum. Nulla consectetur vehicula mi vitae varius. Suspendisse potenti. Duis gravida massa quis turpis dignissim, vel feugiat lorem dapibus. Sed fringilla magna vel justo pharetra elementum. Integer finibus posuere diam, quis mollis sapien hendrerit at.
+    </p>
+  </section>
+
+  <!-- Articles Section -->
+  <section class="articles-section">
+    <div class="row">
+      <div class="col-md-6" *ngFor="let article of articles">
+        <div class="card mb-4">
+          <img ngSrc="article.image" class="card-img-top" alt="Article Image">
+          <div class="card-body">
+            <p class="card-text">{{ article.text }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<app-footer></app-footer>
