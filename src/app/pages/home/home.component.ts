@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
-import {HeaderComponent} from '../../common/header/header.component';
-import {FooterComponent} from '../../common/footer/footer.component';
 import {NgForOf, NgOptimizedImage} from '@angular/common';
 import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
   imports: [
-    HeaderComponent,
-    FooterComponent,
+
     NgForOf,
     NgOptimizedImage
   ],
