@@ -1,13 +1,11 @@
 import { Component } from '@angular/core';
-import {HeaderComponent} from '../../common/header/header.component';
-import {FooterComponent} from '../../common/footer/footer.component';
 import {NgForOf, NgOptimizedImage} from '@angular/common';
+import {HttpClient} from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
   imports: [
-    HeaderComponent,
-    FooterComponent,
+
     NgForOf,
     NgOptimizedImage
   ],
@@ -33,4 +31,23 @@ export class HomeComponent {
       text: 'Curabitur in feugiat nunc, sit amet bibendum arcu. Nam vitae fringilla ligula.'
     }
   ];
+  // articles: { image: string; text: string }[] = [];
+  //
+  // constructor(private http: HttpClient) {}
+  //
+  // ngOnInit(): void {
+  //   this.fetchArticles();
+  // }
+  //
+  // fetchArticles(): void {
+  //   const apiUrl = 'https://example.com/api/articles'; // Replace with your backend API URL
+  //   this.http.get<{ image: string; text: string }[]>(apiUrl).subscribe(
+  //     (response) => {
+  //       this.articles = response;
+  //     },
+  //     (error) => {
+  //       console.error('Error fetching articles:', error);
+  //     }
+  //   );
+  // }
 }
