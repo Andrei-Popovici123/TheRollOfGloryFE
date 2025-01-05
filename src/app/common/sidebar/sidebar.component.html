@@ -1,0 +1,36 @@
+<aside class="sidebar bg-orange text-white d-flex flex-column justify-content-between">
+  <nav class="d-flex flex-column flex-grow-1 justify-content-center align-items-center">
+    <ul class="list-unstyled w-100">
+      <ng-container >
+        <li class="text-center py-3 border-bottom border-white">
+          <a href="#" class="text-white text-decoration-none fw-bold">Home</a>
+        </li>
+      </ng-container>
+      <ng-container *ngIf="!isRegistered; else registeredOptions">
+        <li *ngFor="let option of ['Register Now', 'Login']" class="text-center py-3 border-bottom border-white">
+          <a href="#" class="text-white text-decoration-none fw-bold">{{ option }}</a>
+        </li>
+      </ng-container>
+      <ng-template #registeredOptions>
+        <li *ngFor="let option of ['Account', 'Profile']" class="text-center py-3 border-bottom border-white">
+          <a href="#" class="text-white text-decoration-none fw-bold">{{ option }}</a>
+        </li>
+      </ng-template>
+      <ng-container *ngIf="isProfileComplete && isRegistered">
+        <li class="text-center py-3 border-bottom border-white">
+          <a href="#" class="text-white text-decoration-none fw-bold">Contest Info</a>
+        </li>
+      </ng-container>
+    </ul>
+  </nav>
+  <div class="toggle-container p-3 text-center">
+    <label class="form-check-label text-white d-block mb-2">
+      <input type="checkbox" class="form-check-input me-2" (change)="toggleRegistered()" />
+      Registered?
+    </label>
+    <label class="form-check-label text-white">
+      <input type="checkbox" class="form-check-input me-2" (change)="toggleCompletedProfile()" />
+      Profile Complete?
+    </label>
+  </div>
+</aside>
