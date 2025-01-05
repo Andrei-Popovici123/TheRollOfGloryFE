@@ -1,103 +1,104 @@
-
-<!-- app-registration.component.html -->
 <div class="registration-container">
-  <section class="registration-form-section">
-    <h1 class="text-center text-uppercase">Event Registration</h1>
-    <form (ngSubmit)="submitForm()" [formGroup]="registrationForm" class="form-group">
-      <!-- Personal Details -->
-      <div class="form-section">
-        <h3>Personal Details</h3>
-        <div class="mb-3">
-          <label for="fullName" class="form-label">Full Name</label>
-          <input type="text" id="fullName" formControlName="fullName" class="form-control" required />
+  <app-sidebar></app-sidebar>
+  <main class="registration-content">
+    <section class="registration-form-section">
+      <h1 class="text-center text-uppercase">Event Registration</h1>
+      <form (ngSubmit)="submitForm()" [formGroup]="registrationForm" class="form-group">
+        <!-- Personal Details -->
+        <div class="form-section">
+          <h3>Personal Details</h3>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" id="fullName" formControlName="fullName" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="age" class="form-label">Age</label>
+            <input type="number" id="age" formControlName="age" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label for="gender" class="form-label">Gender</label>
+            <select id="gender" formControlName="gender" class="form-control" required>
+              <option value="">Select Gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Address</label>
+            <textarea id="address" formControlName="address" class="form-control" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label">Phone Number</label>
+            <input type="tel" id="phoneNumber" formControlName="phoneNumber" class="form-control" required />
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="age" class="form-label">Age</label>
-          <input type="number" id="age" formControlName="age" class="form-control" required />
-        </div>
-        <div class="mb-3">
-          <label for="gender" class="form-label">Gender</label>
-          <select id="gender" formControlName="gender" class="form-control" required>
-            <option value="">Select Gender</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-        </div>
-        <div class="mb-3">
-          <label for="address" class="form-label">Address</label>
-          <textarea id="address" formControlName="address" class="form-control" required></textarea>
-        </div>
-        <div class="mb-3">
-          <label for="phoneNumber" class="form-label">Phone Number</label>
-          <input type="tel" id="phoneNumber" formControlName="phoneNumber" class="form-control" required />
-        </div>
-      </div>
 
-      <!-- Medical Disclaimer -->
-      <div class="form-section">
-        <h3>Medical Disclaimer</h3>
-        <div class="form-check">
-          <input
-            type="checkbox"
-            id="medicalDisclaimer"
-            formControlName="medicalDisclaimer"
-            class="form-check-input"
-            required
-          />
-          <label for="medicalDisclaimer" class="form-check-label">
-            I confirm that I am physically fit to participate and accept the associated risks.
-          </label>
+        <!-- Medical Disclaimer -->
+        <div class="form-section">
+          <h3>Medical Disclaimer</h3>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="medicalDisclaimer"
+              formControlName="medicalDisclaimer"
+              class="form-check-input"
+              required
+            />
+            <label for="medicalDisclaimer" class="form-check-label">
+              I confirm that I am physically fit to participate and accept the associated risks.
+            </label>
+          </div>
         </div>
-      </div>
 
-      <!-- Emergency Contact -->
-      <div class="form-section">
-        <h3>Emergency Contact</h3>
-        <div class="mb-3">
-          <label for="emergencyContactName" class="form-label">Full Name</label>
-          <input
-            type="text"
-            id="emergencyContactName"
-            formControlName="emergencyContactName"
-            class="form-control"
-            required
-          />
+        <!-- Emergency Contact -->
+        <div class="form-section">
+          <h3>Emergency Contact</h3>
+          <div class="mb-3">
+            <label for="emergencyContactName" class="form-label">Full Name</label>
+            <input
+              type="text"
+              id="emergencyContactName"
+              formControlName="emergencyContactName"
+              class="form-control"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="emergencyContactPhone" class="form-label">Phone Number</label>
+            <input
+              type="tel"
+              id="emergencyContactPhone"
+              formControlName="emergencyContactPhone"
+              class="form-control"
+              required
+            />
+          </div>
         </div>
-        <div class="mb-3">
-          <label for="emergencyContactPhone" class="form-label">Phone Number</label>
-          <input
-            type="tel"
-            id="emergencyContactPhone"
-            formControlName="emergencyContactPhone"
-            class="form-control"
-            required
-          />
-        </div>
-      </div>
 
-      <!-- Consent to Terms -->
-      <div class="form-section">
-        <h3>Consent to Terms</h3>
-        <div class="form-check">
-          <input
-            type="checkbox"
-            id="consentToTerms"
-            formControlName="consentToTerms"
-            class="form-check-input"
-            required
-          />
-          <label for="consentToTerms" class="form-check-label">
-            I accept the contest rules, terms of service, privacy policy, and GDPR waiver.
-          </label>
+        <!-- Consent to Terms -->
+        <div class="form-section">
+          <h3>Consent to Terms</h3>
+          <div class="form-check">
+            <input
+              type="checkbox"
+              id="consentToTerms"
+              formControlName="consentToTerms"
+              class="form-check-input"
+              required
+            />
+            <label for="consentToTerms" class="form-check-label">
+              I accept the contest rules, terms of service, privacy policy, and GDPR waiver.
+            </label>
+          </div>
         </div>
-      </div>
 
-      <button type="submit" class="btn btn-primary mt-4" [disabled]="registrationForm.invalid">
-        Register
-      </button>
-    </form>
-  </section>
+        <button type="submit" class="btn btn-primary mt-4" [disabled]="registrationForm.invalid">
+          Register
+        </button>
+      </form>
+    </section>
+  </main>
 </div>
 
 

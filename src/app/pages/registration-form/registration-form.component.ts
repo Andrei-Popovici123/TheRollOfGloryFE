@@ -1,13 +1,14 @@
 import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
-import {HttpClient} from '@angular/common/http';
+
+import {SidebarComponent} from '../../common/sidebar/sidebar.component';
 import {CommonModule} from '@angular/common';
 
 @Component({
   selector: 'app-registration-form',
   standalone: true,
   imports: [
-    ReactiveFormsModule, CommonModule,
+    ReactiveFormsModule, CommonModule,SidebarComponent
   ],
   templateUrl: './registration-form.component.html',
   styleUrl: './registration-form.component.scss'
