@@ -1,12 +1,17 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import {SidebarComponent} from '../../../common/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-register',
-  templateUrl: './app-register.component.html',
-  styleUrls: ['./app-register.component.scss']
+  templateUrl: './register-page.component.html',
+  imports: [
+    SidebarComponent,
+    ReactiveFormsModule
+  ],
+  styleUrls: ['./register-page.component.scss']
 })
-export class AppRegisterComponent {
+export class RegisterPageComponent {
   registerForm: FormGroup;
   submittedUsers: any[] = []; // Placeholder for registered user data
 

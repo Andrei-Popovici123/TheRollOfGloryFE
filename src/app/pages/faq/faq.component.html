@@ -1,0 +1,21 @@
+<app-header></app-header>
+<div class="faq-container">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h3>FAQ Chapters</h3>
+    <ul>
+      <li *ngFor="let faq of faqs">
+        <a  (click)="scrollTo(faq.id)">{{ faq.title }}</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    <div *ngFor="let faq of faqs" class="chapter" [id]="faq.id">
+      <h2>{{ faq.title }}</h2>
+      <p>{{ faq.content }}</p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

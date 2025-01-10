@@ -1,10 +1,15 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
+import {SidebarComponent} from '../../../common/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './app-login.component.html',
-  styleUrls: ['./app-login.component.scss']
+  templateUrl: './login-page.component.html',
+  imports: [
+    SidebarComponent,
+    ReactiveFormsModule
+  ],
+  styleUrls: ['./login-page.component.scss']
 })
 export class LoginPageComponent {
   loginForm: FormGroup;

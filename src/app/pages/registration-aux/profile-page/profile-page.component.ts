@@ -1,18 +1,17 @@
 import { Component } from '@angular/core';
 import {FormBuilder, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
-
-import {SidebarComponent} from '../../common/sidebar/sidebar.component';
 import {CommonModule} from '@angular/common';
+import {SidebarComponent} from '../../../common/sidebar/sidebar.component';
 
 @Component({
-  selector: 'app-registration-form',
+  selector: 'app-profile-page',
   standalone: true,
   imports: [
-    ReactiveFormsModule, CommonModule,SidebarComponent
+    ReactiveFormsModule, CommonModule, SidebarComponent,
   ],
-  templateUrl: './registration-form.component.html',
-  styleUrl: './registration-form.component.scss'
-})export class RegistrationFormComponent {
+  templateUrl: './profile-page.component.html',
+  styleUrl: './profile-page.component.scss'
+})export class ProfilePageComponent {
   registrationForm: FormGroup;
   submittedData: any[] = []; // Placeholder Awaiting backend implementation
 
@@ -42,7 +41,7 @@ import {CommonModule} from '@angular/common';
     }
   }
 }
-// export class RegistrationFormComponent {
+// export class RegistrationHomeComponent {
 //   registrationForm: FormGroup;
 //
 //   constructor(private fb: FormBuilder, private http: HttpClient) {

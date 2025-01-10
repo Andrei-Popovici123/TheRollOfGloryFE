@@ -2,9 +2,11 @@ import { Component } from '@angular/core';
 import {isNgContainer} from '@angular/compiler';
 import {CommonModule} from '@angular/common';
 
+import {RouterModule,RouterLink, RouterLinkActive} from '@angular/router';
+
 @Component({
   selector: 'app-sidebar',
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive, RouterModule],
   templateUrl: './sidebar.component.html',
   styleUrl: './sidebar.component.scss'
 })
