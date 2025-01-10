@@ -7,18 +7,24 @@
         </li>
       </ng-container>
       <ng-container *ngIf="!isRegistered; else registeredOptions">
-        <li *ngFor="let option of ['Register Now', 'Login']" class="text-center py-3 border-bottom border-white">
-          <a href="#" class="text-white text-decoration-none fw-bold">{{ option }}</a>
+        <li class="text-center py-3 border-bottom border-white">
+        <a routerLink="/register" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Register</a>
+        </li>
+        <li>
+        <a routerLink="/login" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Login</a>
         </li>
       </ng-container>
       <ng-template #registeredOptions>
-        <li *ngFor="let option of ['Account', 'Profile']" class="text-center py-3 border-bottom border-white">
-          <a href="#" class="text-white text-decoration-none fw-bold">{{ option }}</a>
+        <li  class="text-center py-3 border-bottom border-white">
+          <a routerLink="/account" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Account</a>
+        </li>
+        <li>
+          <a routerLink="/profile" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Profile</a>
         </li>
       </ng-template>
       <ng-container *ngIf="isProfileComplete && isRegistered">
         <li class="text-center py-3 border-bottom border-white">
-          <a href="#" class="text-white text-decoration-none fw-bold">Contest Info</a>
+          <a routerLink="/contestInfo" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Contest Info</a>
         </li>
       </ng-container>
     </ul>
