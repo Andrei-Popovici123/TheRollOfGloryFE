@@ -1,3 +1,45 @@
 .bg-orange {
   background-color: orange;
 }
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.custom-button {
+  background-color: #4285f4;
+  color: white;
+  z-index: 1000;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: #8a2be2;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
+}
+.corner-image {
+  position: absolute;
+  z-index: 0;
+  margin-left: 5px;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+
+}

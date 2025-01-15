@@ -1,0 +1,30 @@
+.about-page-container {
+  padding: 20px;
+  background-color:  #FFA500; /* Light gray background */
+  position: relative;
+
+  .about-header {
+    text-align: center;
+    padding: 10px;
+    background-color: #ffa500; /* Orange background */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  .about-content {
+    margin: 20px auto;
+    max-width: 800px; /* Limit width for readability */
+
+    .about-section {
+      line-height: 1.6;
+      font-size: 1rem;
+      color: white;
+
+      p {
+        margin-bottom: 15px;
+        text-align: justify;
+      }
+    }
+  }
+}

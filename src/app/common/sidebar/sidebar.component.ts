@@ -4,6 +4,7 @@ import {CommonModule} from '@angular/common';
 
 import {RouterModule,RouterLink, RouterLinkActive} from '@angular/router';
 
+
 @Component({
   selector: 'app-sidebar',
   imports: [CommonModule, RouterLink, RouterLinkActive, RouterModule],
@@ -12,6 +13,23 @@ import {RouterModule,RouterLink, RouterLinkActive} from '@angular/router';
 })
 export class SidebarComponent {
 isRegistered = false;
+registrationOpen: boolean = false;
+
+  constructor() {
+  }
+
+  ngOnInit(): void {
+    this.checkDate();
+  }
+
+  // fetchRegistrationDate(): Observable<Date> {
+  //   return this.http.get<Date>('https://');
+  // }
+  checkDate(): void {
+    const lastRegistrationDate = new Date('2025-01-19');
+    const today = new Date();
+    this.registrationOpen = today < lastRegistrationDate;
+  }
   toggleRegistered = () => {
     this.isRegistered = !this.isRegistered;
   }
