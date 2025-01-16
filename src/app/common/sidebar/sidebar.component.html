@@ -6,9 +6,9 @@
           <a href="#" class="text-white text-decoration-none fw-bold">Home</a>
         </li>
       </ng-container>
-      <ng-container *ngIf="!isRegistered; else registeredOptions">
-        <li class="text-center py-3 border-bottom border-white">
-        <a routerLink="/register" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Register</a>
+      <ng-container class="text-center py-3 border-bottom border-white" *ngIf="!isRegistered; else registeredOptions">
+        <li  *ngIf="registrationOpen">
+        <a  routerLink="/register" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Register</a>
         </li>
         <li>
         <a routerLink="/login" routerLinkActive="active" class="text-white text-decoration-none fw-bold">Login</a>

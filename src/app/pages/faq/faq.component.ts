@@ -27,7 +27,12 @@ export class FaqComponent implements OnInit {
       { id: 'chapter1', title: 'Chapter 1: Getting Started', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' },
       { id: 'chapter2', title: 'Chapter 2: Installation', content: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur et.' },
       { id: 'chapter3', title: 'Chapter 3: Usage', content: 'Sed posuere consectetur est at lobortis. Aenean eu leo quam.' },
-      { id: 'chapter4', title: 'Chapter 4: Troubleshooting', content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.' }
+      { id: 'chapter4', title: 'Chapter 4: Troubleshooting', content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.' },
+      { id: 'chapter4', title: 'Chapter 4: Troubleshooting', content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.' },
+      { id: 'chapter4', title: 'Chapter 4: Troubleshooting', content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.' },
+      { id: 'chapter4', title: 'Chapter 4: Troubleshooting', content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.' },
+      { id: 'chapter4', title: 'Chapter 4: Troubleshooting', content: 'Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctorVivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.' }
+
     ];
   }
 

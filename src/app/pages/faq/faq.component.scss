@@ -1,17 +1,25 @@
 .faq-container {
   display: flex;
   min-height: 100vh;
+  background: #ffa500;
 }
 
 .sidebar {
   background-color: orange;
+ z-index: 0;
   color: white;
+  height: 100vh;
   width: 250px;
   padding: 1rem;
   position: sticky;
   top: 0;
-  height: 100vh;
+
   overflow-y: auto;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.6);
+}
+.sidebar h3{
+  padding-top: 4rem;
+  padding-bottom: 2rem;
 }
 
 .sidebar ul {
