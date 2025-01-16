@@ -1,0 +1,12 @@
+specVersion: "v1beta"
+serviceId: "TheRollOfGloryFE"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "TheRollOfGloryFE-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
