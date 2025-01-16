@@ -1,9 +1,5 @@
 {
   "emulators": {
-    "dataconnect": {
-      "dataDir": "dataconnect/.dataconnect/pgliteData",
-      "port": 9399
-    },
     "apphosting": {
       "port": 5002,
       "rootDirectory": "./",
@@ -38,9 +34,6 @@
     },
     "singleProjectMode": true
   },
-  "dataconnect": {
-    "source": "dataconnect"
-  },
   "firestore": {
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
@@ -63,7 +56,7 @@
     }
   ],
   "hosting": {
-    "public": "public",
+    "public": "dist/the-roll-of-glory-fe/browser",
     "ignore": [
       "firebase.json",
       "**/.*",
